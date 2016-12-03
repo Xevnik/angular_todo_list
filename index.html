@@ -3,32 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>TODO List</title>
-    <script data-require="angularjs@1.5.8" data-semver="1.5.8" src="https://opensource.keycdn.com/angularjs/1.5.8/angular.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.js"></script>
     <script src="script.js"></script>
-    <script src="toDoList.js"></script>
+    <script src="components/toDoList/toDoList.js"></script>
+    <script src="components/toDoListDetails/toDoListDetails.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<nav>
-    <h1>TO DO LIST</h1>
-</nav>
-<main>
-    <aside>
-        <h2>Add</h2>
-        <div>
-            <h3></h3>
-            Title
-            <br><input type="text"><br>
-            Description
-            <br><input type="text"><br>
-        </div>
-    </aside>
-    <div>
-        <h2>TO DO</h2>
-    </div>
-</main>
-<footer>
-
-</footer>
+<body class="container">
+<to-do-list></to-do-list>
 </body>
 </html>
